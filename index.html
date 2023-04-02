@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>forms42</title>
+  </head>
+  <body>
+    <div class="page-wrap">
+      <header class="header">
+        <div class="container">
+          <h1 class="title">Реєстрація</h1>
+          <p class="text">
+            Будь ласка заповніть форму. Інформація про вас буде збережена.
+          </p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <form id="form" class="form">
+            <div class="main-input">
+              <label for="name" class="bold"> Ім'я та Прізвище:</label>
+              <input
+                type="text"
+                id="name"
+                class="input"
+                name="name"
+                placeholder="Ім'я та Прізвище"
+              />
+            </div>
+            <div class="main-input">
+              <label for="birthday" class="bold">Дата народження:</label>
+              <input
+                type="text"
+                id="birthday"
+                class="input"
+                name="date"
+                placeholder="01.01.1991"
+              />
+            </div>
+            <div class="gender">
+              <h3 class="bold">Стать:</h3>
+              <label for="male" class="male">Чоловік</label>
+              <input
+                type="radio"
+                checked
+                name="gender"
+                id="gender"
+                value="Чоловік"
+              />
+              <label for="female">Жінка</label>
+              <input type="radio" name="gender" id="gender" value="Жінка" />
+            </div>
+
+            <div class="main-input">
+              <label for="city" class="bold">Місто:</label>
+              <select name="city" class="input" id="city">
+                <option value="Київ">Київ</option>
+                <option value="Одеса">Одеса</option>
+                <option value="Харків">Харків</option>
+                <option value="Львів">Львів</option>
+                <option value="Дніпро">Дніпро</option>
+                <option value="Вінниця">Вінниця</option>
+                <option value="Запоріжжя">Запоріжжя</option>
+              </select>
+            </div>
+
+            <div class="main-input">
+              <label for="address" class="bold">Адреса</label>
+              <textarea
+                class="input"
+                name="address"
+                id="address"
+                placeholder="вул. Хмельницька 33"
+              ></textarea>
+            </div>
+
+            <fieldset class="border">
+              <legend class="bold">Володіння мовою:</legend>
+              <label for="ukrainian">Українська</label>
+              <input
+                type="checkbox"
+                name="language"
+                checked
+                id="language"
+                value="Українська"
+              />
+              <label for="english">Англійська</label>
+              <input
+                type="checkbox"
+                name="language"
+                id="language"
+                value="Англійська"
+              />
+              <label for="russian">Російська</label>
+              <input
+                type="checkbox"
+                name="language"
+                id="language"
+                value="Російська"
+              />
+              <label for="german">Німецька</label>
+              <input
+                type="checkbox"
+                name="language"
+                id="language"
+                value="Німецька"
+              />
+            </fieldset>
+
+            <button id="btn" class="save-button">Зберегти</button>
+          </form>
+
+          <table id="table" class="table"></table>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
